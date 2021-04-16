@@ -15,5 +15,8 @@
 .DS_Store
 .prettierignore
 
+# Avoid other Files
+
 .design
 design
+*.md
