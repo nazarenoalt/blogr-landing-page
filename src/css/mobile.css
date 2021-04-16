@@ -1,2 +1,218 @@
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
+
+/*General*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  --light-red: #ff525d;
+  --very-light-red: #ff7a85;
+  --very-dark-blue: #1f3f5b;
+
+  --white: #ffffff;
+  --grayish-blue: #25252d;
+  --very-dark-grayish-blue: #4b5862;
+  --very-dark-black-blue: #25252d;
+}
+
+figure {
+  max-width: 100%;
+}
+img {
+  max-width: 100%;
+}
+a {
+  color: var(--white);
+  text-decoration: none;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight:600
+}
+
+/*Body*/
+.body {
+  display: grid;
+  grid-template-rows: repeat(5, auto);
+  width: 100%;
+}
+
+/*H2, H3, p*/
+.title {
+  color: var(--white);
+  font-family: 'overpass', sans-serif;
+  margin: 50px 0;
+  font-size: 2.2rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.subtitle {
+  color: var(--very-dark-blue);
+  font-family: 'overpass', sans-serif;
+  font-size: 1.8rem;
+  text-align: center;
+  margin: 50px 25px;
+}
+
+.description {
+  color: var(--white);
+  font-family: 'overpass', sans-serif;
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 0 30px 50px;
+}
+.description.alt {
+  color: var(--very-dark-blue);
+}
+/*header*/
+.header {
+  position: relative;
+  display: block;
+  width: 100%;
+  background: var(--light-red);
+  background-image: linear-gradient(0deg, rgba(255,61,84,1) 0%, rgba(255,143,112,1) 100%);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding: 50px 0;
+  overflow: hidden;
+  border-bottom-left-radius: 100px;
+  margin-bottom: 60px;
+}
+
+.header::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom:0;
+  left: 0;
+  right: 0;
+  background-image: url("../../assets/bg-pattern-intro.svg");
+  background-repeat: no-repeat;
+  background-size: 1000px;
+  background-position: -35vh -30vh;
+}
+
+.header .container {
+  position: relative;
+  top: 0;
+  bottom:0;
+  left: 0;
+  right: 0;
+  padding: 0 25px;
+
+}
+.header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0 120px;
+}
+.header .logo-container {
+  width: 80px;
+}
+
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  margin-bottom: 100px;
+}
+.button {
+  display: inline-block;
+  border: 1px solid var(--white);
+  padding: 15px 0;
+  border-radius: 30px;
+  width: 140px;
+  text-align: center;
+  margin: 0 10px;
+}
+.main.button {
+  background-color: white;
+  color: var(--very-light-red);
+}
+
+/*Section Three*/
+.section-three {
+  position: relative;
+  background: rgb(63,65,100);
+  background: linear-gradient(0deg, rgba(63,65,100,1) 0%, rgba(36,37,56,1) 100%);
+  overflow: hidden;
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  padding-bottom: 100px;
+}
+
+.section-three::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom:0;
+  left: 0;
+  right: 0;
+  background-image: url("../../assets/bg-pattern-circles.svg");
+  background-repeat: no-repeat;
+  background-size: 150%;
+  background-position: 50% -200px;
+}
+
+.img-container-phones {
+  position: relative;
+  height: 200px;
+  z-index: 10;
+  margin: 0 auto;
+}
+
+.img-container-circles {
+  position: relative;
+  max-width: none;
+  overflow:initial;
+  width: 160%;
+  top: -20%;
+  left: -30%;
+}
+
+.section-three .title {
+  margin-top: 300px;
+}
+
+/*Footer*/
+.footer {
+background:var(--very-dark-black-blue);
+text-align: center;
+padding: 50px 25px;
+border-top-right-radius: 100px;
+}
+.footer-title {
+  color: white;
+  font-family: overpass;
+  font-size: 2.5rem;
+}
+.footer ul li {
+  list-style-type: none;
+  margin-bottom: 15px;
+}
+.footer a {
+  font-weight: 300;
+
+}
+
+.footer h4 {
+  color: white;
+  font-family: ubuntu;
+  margin: 50px 0;
+}
+
+.attribution { 
+  font-size: 11px;
+  text-align: center;
+  color: white;
+  font-family: ubuntu;
+  margin-top: 50px;
+}
+
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}

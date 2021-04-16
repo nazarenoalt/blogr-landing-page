@@ -1,0 +1,12 @@
+{
+  "name": "blogr-landing-page",
+  "version": "1.0.0",
+  "description": "![Design preview for the Blogr landing page coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["blogr", "landing page", "frontend mentor"],
+  "author": "Nazareno Altamiranda <nazalt256@gmail.com>",
+  "license": "ISC"
+}
